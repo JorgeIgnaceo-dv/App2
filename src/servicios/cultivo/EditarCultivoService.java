@@ -1,6 +1,6 @@
-package services.cultivo;
+package servicios.cultivo;
 
-import models.Cultivo;
+import modelo.Cultivo;
 import java.util.List;
 
 /**
