@@ -9,14 +9,14 @@ public class Cultivo {
     private String variedad;
     private LocalDate fechaSiembra;
     private String estado;
-    //private final List<Actividad> actividades;
+    private final List<Actividad> actividades;
 
     public Cultivo(String nombre) {
         this.nombre = nombre;
         this.variedad = "";
         this.fechaSiembra = LocalDate.now();
         this.estado = "ACTIVO";
-        //this.actividades = new ArrayList<>();
+        this.actividades = new ArrayList<>();
     }
 
     public String getNombre() { return nombre; }
@@ -27,7 +27,7 @@ public class Cultivo {
     public void setFechaSiembra(LocalDate fechaSiembra) { this.fechaSiembra = fechaSiembra; }
     public String getEstado() { return estado; }
     public void setEstado(String estado) { this.estado = estado; }
-    //public List<Actividad> getActividades() { return actividades; }
+    public List<Actividad> getActividades() { return actividades; }
 
     @Override
     public String toString() {
